@@ -268,7 +268,7 @@ const Home = () => {
                     <h4 className='lg:text-[30px] text-[22px] font-semibold text-secondary mb-3'>Benefits to Savers</h4>
                     <p className='lg:w-2/4 w-full text-blue-gray text-center lg:text-[17px] text-[14px] mx-auto mb-8'>Enjoy guaranteed returns, cashback, food rewards, and loyalty perks, all while securing your financial future.</p>
                     <div className='w-full lg:pb-4 flex max-sm:flex-col gap-4'>
-                        <div className='w-full lg:w-[590px] lg:p-5 lg:h-[200px] h-[170px] p-3 lg:border-b lg:border-[#E4E7EC]'>   
+                        <div className='w-full lg:p-5 lg:h-[200px] h-[170px] p-3 lg:border-b lg:border-[#E4E7EC]'>   
                             <img 
                                 src={ic_rocket}
                                 alt='Community Empowerment Icon'
@@ -278,7 +278,7 @@ const Home = () => {
                             <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>Enjoy reliable and guaranteed returns on your savings, ensuring your financial goals are always within reach.</span>
                         </div>
                         <div className="max-sm:hidden inline-block min-h-[1em] w-0.5 self-stretch bg-[#E4E7EC] mb-4"></div> 
-                        <div className='w-full lg:w-[590px] lg:p-5 lg:h-[200px] h-[170px] max-sm:p-3 lg:border-b lg:border-[#E4E7EC]'>   
+                        <div className='w-full lg:p-5 lg:h-[200px] h-[170px] max-sm:p-3 lg:border-b lg:border-[#E4E7EC]'>   
                             <img 
                                 src={ic_rocket}
                                 alt='Community Empowerment Icon'
@@ -289,7 +289,7 @@ const Home = () => {
                         </div> 
                     </div>
                     <div className='w-full flex max-sm:flex-col gap-4'>
-                        <div className='w-full lg:w-[590px] lg:p-5 lg:h-[200px] h-[170px] p-3'>   
+                        <div className='w-full lg:p-5 lg:h-[200px] h-[170px] p-3'>   
                             <img 
                                 src={ic_rocket}
                                 alt='Community Empowerment Icon'
@@ -299,7 +299,7 @@ const Home = () => {
                             <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>Get rewarded with up to 100% cashback on your savings, boosting your earnings and making your financial journey even more rewarding.</span>
                         </div>
                         <div className="max-sm:hidden inline-block min-h-[1em] w-0.5 self-stretch bg-[#E4E7EC]"></div> 
-                        <div className='w-full lg:w-[590px] lg:p-5 lg:h-[200px] h-[170px] p-3'>   
+                        <div className='w-full lg:p-5 lg:h-[200px] h-[170px] p-3'>   
                             <img 
                                 src={ic_rocket}
                                 alt='Community Empowerment Icon'
