@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", "Lato", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Montserrat", "Lato", source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: "Montserrat", "Lato", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.ic-button span {
+  position: relative;
+}
+
+.timeline {
+  --line-width: 0.5rem;
+  --line-color: #C829A9;
+  --line-overhang: 1rem;
+  --item-gap: 1rem;
+  --line-border-radius: 15px;
+  --item-start-offset-left: 0;
+  --item-start-offset-right: 5rem;
+  --marker-size: 1.5rem;
+  --marker-color: var(--line-color);
+  --marker-radius: 50%;
+  --pointer-height: 2rem;
+  --pointer-width: 1rem;
+  --pointer-min-offset: 5rem;
+  --card-background: whitesmoke;
+  --card-radius: 0.1rem;
+  --card-shadow: unset;
+  --card-padding: 1rem;
+  --card-offset: 1rem;
+}
+
+.mobile-timeline li::before {
+  padding: 0;
+  flex: none;
+}

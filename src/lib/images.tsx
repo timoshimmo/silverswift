@@ -1,0 +1,27 @@
+
+export { default as silverswidtLogo } from "../assets/images/silverswift_logo.png"; 
+export { default as homeBanner } from "../assets/images/home_banner.png";
+export { default as appStoreLogo } from '../assets/images/appstore.png';
+export { default as playStoreLogo } from '../assets/images/playstore.png';
+export { default as ic_community_empowerment } from '../assets/icons/ic_commuity_empowerment.png';
+export { default as ic_trust_transparency } from '../assets/icons/ic_trust_transparency.png';
+export { default as ic_financial_inclusion } from '../assets/icons/ic_financial_inclusion.png';
+export { default as ic_innovation_simplicity } from '../assets/icons/ic_innovation_simplicity.png';
+export { default as ic_intergrity_accountability } from '../assets/icons/ic_intergrity_accountability.png';
+export { default as ic_sustainability_growth } from '../assets/icons/ic_sustainability_growth.png';
+export { default as img_home_how_started } from '../assets/images/img_home_how_started.png';
+export { default as ic_rocket } from '../assets/icons/ic_rocket.png';
+export { default as img_home_testimonial } from '../assets/images/img_home_testimonial.png';
+export { default as ic_carousel_arrow_left } from '../assets/icons/ic_carousel_left_arrow.svg';
+export { default as ic_carousel_arrow_right } from '../assets/icons/ic_carousel_right_arrow.svg';
+export { default as ic_arrow_down } from '../assets/icons/ic_down_arrow.svg';
+export { default as ic_arrow_up } from '../assets/icons/ic_up_arrow.svg';
+export { default as ic_accordion_arrow } from '../assets/icons/ic_accordion_arrow.png';
+export { default as ic_facebook } from '../assets/icons/Fb.png';
+export { default as ic_x } from '../assets/icons/Tw.png';
+export { default as ic_instagram } from '../assets/icons/Ig.png';
+export { default as ic_linkedin } from '../assets/icons/Ln.png';
+export { default as banner_about } from '../assets/images/banner_about.png';
+export { default as team1 } from '../assets/images/team1.png';
+export { default as team2 } from '../assets/images/team2.png';
+export { default as team3 } from '../assets/images/team3.png';
