@@ -7,6 +7,7 @@ import Login from '../pages/login';
 import About from '../pages/about';
 import How from '../pages/how';
 import Faqs from '../pages/faqs';
+import ContactUs from '../pages/contact-us';
 
 const RoutesComponent = () => {
     return (
@@ -17,6 +18,7 @@ const RoutesComponent = () => {
             <Route path={ROUTES.ABOUT} element={<About />} />
             <Route path={ROUTES.HOW_IT_WORKS} element={<How />} />
             <Route path={ROUTES.FAQs} element={<Faqs />} />
+            <Route path={ROUTES.CONTACTUS} element={<ContactUs />} />
         </Routes>
     )
 }

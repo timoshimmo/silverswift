@@ -63,7 +63,7 @@ const Faqs = () => {
         <div className="w-full justify-start items-center bg-white">
             <Header/>
             <main className="w-full block">
-                <section className='w-full px-5 lg:px-20 py-10 lg:py-20'>
+                <section className='w-full px-5 lg:px-20 pb-10 pt-10 lg:pt-20'>
                     <div className='w-full text-center'>
                         <h1 className='lg:w-2/3 w-full text-secondary mx-auto mb-3 lg:mb-0 lg:font-bold font-semibold text-center lg:text-[40px] text-[25px]'>Frequently Asked Questions</h1>
                         <p className='lg:w-1/2 w-full text-blue-gray text-center lg:text-[17px] text-[14px] mx-auto mb-8 mt-2'>Get quick answers to questions troubling your mind.</p>

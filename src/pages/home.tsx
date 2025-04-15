@@ -118,7 +118,7 @@ const Home = () => {
                 </section>
 
                 <section className='lg:hidden w-full py-6 bg-primary'>
-                    <div className='grid grid-cols-2 grid-cols-2 divide-x divide-[#FFFFFF] px-4'>
+                    <div className='grid grid-cols-2 divide-x divide-[#FFFFFF] px-4'>
                         <div className='py-3 px-4 text-left'>
                             <p className='text-[#FFFFFF] font-[400] text-[10px]'>
                                 HOUSE HOLDS
@@ -136,7 +136,7 @@ const Home = () => {
                             </h6>
                         </div>
                     </div>
-                    <div className='grid grid-cols-2 grid-cols-2 divide-x divide-[#FFFFFF] px-4 my-3'>
+                    <div className='grid grid-cols-2 divide-x divide-[#FFFFFF] px-4 my-3'>
                         <div className='py-5 px-4 text-left'>
                             <p className='text-[#FFFFFF] font-[400] text-[10px]'>
                                 SUCCESSFUL SAVINGS
@@ -154,7 +154,7 @@ const Home = () => {
                             </h6>
                         </div>   
                     </div>
-                    <div className='grid grid-cols-2 grid-cols-2 divide-x divide-[#FFFFFF] px-4'>
+                    <div className='grid grid-cols-2 divide-x divide-[#FFFFFF] px-4'>
                         <div className='pb-3 px-4 text-left'>
                             <p className='text-[#FFFFFF] font-[400] text-[10px]'>
                                 COMMUNITY ENGAGEMENT

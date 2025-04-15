@@ -25,3 +25,6 @@ export { default as banner_about } from '../assets/images/banner_about.png';
 export { default as team1 } from '../assets/images/team1.png';
 export { default as team2 } from '../assets/images/team2.png';
 export { default as team3 } from '../assets/images/team3.png';
+export { default as ic_phone } from '../assets/icons/ic_phone.png';
+export { default as ic_mail } from '../assets/icons/ic_mail.png';
+export { default as ic_location } from '../assets/icons/ic_location.png';

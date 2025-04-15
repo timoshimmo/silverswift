@@ -70,7 +70,7 @@ const Header = () => {
         color="black"
         className="p-1 font-normal"
       >
-        <a href="/" className="flex items-center text-secondary">
+        <a href={ROUTES.CONTACTUS} className="flex items-center text-secondary">
           Contact Us
         </a>
       </Typography>

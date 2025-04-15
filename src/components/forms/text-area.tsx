@@ -13,12 +13,12 @@ export interface Props extends TextareaHTMLAttributes<HTMLTextAreaElement> {
 }
 
 const classes = {
-  root: "py-3 px-4 w-full rounded appearance-none transition duration-300 ease-in-out text-heading text-sm focus:outline-none focus:ring-0",
+  root: "py-3 px-4 w-full rounded appearance-none transition duration-300 ease-in-out text-heading text-sm outline-none focus:outline-none focus:ring-0",
   normal:
-    "bg-gray-100 border border-border-base focus:shadow focus:bg-light focus:border-accent",
+    "border-[#CBD5E1] border border-border-base focus:shadow focus:bg-light focus:border-accent",
   solid:
-    "bg-gray-100 border border-border-100 focus:bg-light focus:border-accent",
-  outline: "bg-gray-100 border border-border-base focus:border-accent",
+    "border-[#CBD5E1] border border-border-100 focus:bg-light focus:border-accent",
+  outline: "border-[#CBD5E1] border border-border-base focus:border-accent",
   shadow: "focus:shadow",
 };
 
