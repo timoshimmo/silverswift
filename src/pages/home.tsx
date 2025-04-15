@@ -28,7 +28,7 @@ import { ROUTES } from '../lib/route-links';
 
 const Home = () => {
 
-    const [activeTab, setActiveTab] = useState<number | undefined>(0);
+    const [activeTab, setActiveTab] = useState<number | undefined>(-1);
 
     const panels = [
         {
@@ -576,6 +576,7 @@ const Home = () => {
                             <img
                                 src={img_home_testimonial}
                                 alt=""
+                                className='w-full object-cover'
                             />
                         </div>
                         <div className='relative col-span-2 bg-primary lg:py-20 py-10 lg:px-20 px-5'>
