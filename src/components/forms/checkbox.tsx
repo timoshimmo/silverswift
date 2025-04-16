@@ -11,17 +11,17 @@ const Checkbox = React.forwardRef<HTMLInputElement, Props>(
   ({ className, label, name, error, ...rest }, ref) => {
     return (
       <div className={className}>
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-3 ml-1">
           <input
             id={name}
             name={name}
             type="checkbox"
             ref={ref}
-            className="pb-checkbox"
+            className="border-secondary border scale-[1.5]"
             {...rest}
           />
 
-          <label htmlFor={name} className="text-[#212529] text-xs max-sm:text-left">
+          <label htmlFor={name} className="text-secondary text-[13px] max-sm:text-left">
             {label}
           </label>
         </div>

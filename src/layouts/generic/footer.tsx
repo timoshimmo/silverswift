@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { silverswidtLogo } from '../../lib/images';
-//import { ROUTES } from '../../lib/route-links';
+import { ROUTES } from '../../lib/route-links';
 import {
     Typography,
   } from "@material-tailwind/react";
@@ -164,8 +164,8 @@ const Footer = () => {
                     <div>
                         <h6 className="text-[#98A2B3] text-[14px] text-left mb-6 font-semibold">Company</h6>
                         <ul>
-                            <li className="mb-4"><a href="/" className="text-[#667185] text-[15px] font-[500] w-full block text-left">FAQs</a></li>
-                            <li className="mb-4"><a href="/" className="text-[#667185] text-[15px] font-[500] w-full block text-left">How it works</a></li>
+                            <li className="mb-4"><a href={ROUTES.FAQs} className="text-[#667185] text-[15px] font-[500] w-full block text-left">FAQs</a></li>
+                            <li className="mb-4"><a href={ROUTES.HOW_IT_WORKS} className="text-[#667185] text-[15px] font-[500] w-full block text-left">How it works</a></li>
                             <li className="mb-4"><a href="/" className="text-[#667185] text-[15px] font-[500] w-full block text-left">Gallery</a></li>
                         </ul>
                     </div>     

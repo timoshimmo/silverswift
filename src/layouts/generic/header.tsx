@@ -98,21 +98,22 @@ const Header = () => {
                     <div className="ml-16 hidden lg:block">{navList}</div>
                 </div>
                 <div className="flex items-center">
-                    <div className="flex items-center gap-x-6">
-                        <Button
-                            variant="text"
-                            size="sm"
-                            className="hidden lg:inline-block rounded-lg text-secondary"
+                    <div className="flex items-center gap-x-10">
+                        <Typography
+                            as="a"
+                            href={ROUTES.LOGIN}
+                            className="hidden lg:inline-block rounded-lg text-secondary text-[15px] font-semibold px-2"
                         >
-                            <span className="text-[13px]">Login</span>
-                        </Button>
-                        <Button
-                            variant="gradient"
-                            size="sm"
-                            className="hidden lg:inline-block rounded-lg bg-primary p-3 text-[#FFFFFF]"
+                           Login
+                        </Typography>
+                        <Typography
+                            as="a"
+                            href={ROUTES.SIGNUP}
+                            className="hidden lg:inline-block rounded-lg text-white text-[15px] font-semibold py-2 px-5 bg-primary"
                         >
-                            <span className="text-[13px]">Get Started</span>
-                        </Button>
+                           Get Started
+                        </Typography>
+                        
                     </div>
                     <IconButton
                         variant="text"

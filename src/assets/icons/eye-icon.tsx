@@ -3,7 +3,7 @@ export const Eye: React.FC<React.SVGAttributes<{}>> = (props) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
-    stroke="currentColor"
+    stroke="#94A3B8"
     {...props}
   >
     <path

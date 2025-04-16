@@ -65,7 +65,7 @@ const Home = () => {
                         <p className='lg:w-1/2 w-full text-blue-gray text-center lg:text-[15px] text-[13px] mx-auto mb-8'>At SilverSwift Ventures, we combine smart savings with food distribution to ensure your home stays stocked and your finances stay strong</p>
                         <div className='w-full flex gap-x-4 justify-center max-sm:flex-col max-sm:items-center mb-10'>
                             <a href={ROUTES.HOW_IT_WORKS} className='lg:w-[160px] w-full rounded-lg border border-primary py-4 px-8 text-primary text-[13px] font-semibold'>How it Works</a>
-                            <a href="/" className='lg:w-[160px] w-full rounded-lg bg-primary py-4 px-8 text-[#FFFFFF] text-[13px] font-semibold max-sm:mt-3'>Get Started</a>
+                            <a href={ROUTES.SIGNUP} className='lg:w-[160px] w-full rounded-lg bg-primary py-4 px-8 text-[#FFFFFF] text-[13px] font-semibold max-sm:mt-3'>Get Started</a>
                         </div>
                         
                     </div>

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import HeaderSimple from '../layouts/generic/header-simple';
 import { ROUTES } from '../lib/route-links';
 import * as yup from 'yup';
 import { useForm } from "react-hook-form";
@@ -6,41 +7,37 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import Alert from '../components/forms/alert';
 import Input from '../components/forms/input';
 import PasswordInput from '../components/forms/password-input';
-import Checkbox from '../components/forms/checkbox';
 import Button from '../components/forms/button';
+
 //import axios from 'axios';
 
 type FormValues = {
-    fullName: string;
+    firstName: string;
+    lastName: string;
     email: string;
     password: string;
-    confirm: string;
-    terms: boolean;
   }
 
   const userSchema = yup.object().shape({
-    fullName: yup
+    firstName: yup
       .string()
-      .required('Fullname is required'),
+      .required('First name is required'),
+    lastName: yup
+      .string()
+      .required('Last name is required'),
     email: yup
       .string()
       .email("Invalid email format")
       .required('Email is required'),
     password:  yup.string().required('Password is required')
       .min(5, 'Password must be at least 5 characters long'),
-    confirm: yup.string()
-      .required('Password is required')
-      .oneOf([yup.ref('password')], 'Passwords does not match'),
-    terms: yup.boolean().required("The terms and conditions must be accepted.")
-    .oneOf([true], "The terms and conditions must be accepted."),
   });
 
   const defaultValues = {
-    fullName: "",
+    firstName: "",
+    lastName: "",
     email: "",
-    password: "",
-    confirm: "",
-    terms: false
+    password: ""
   };
   
 
@@ -60,7 +57,7 @@ const SignUp = () => {
         resolver: yupResolver(userSchema),
       });
     
-    function onSubmit({ fullName, email, password }: FormValues) {
+    function onSubmit({ firstName, lastName, email, password }: FormValues) {
 
         if(!loading) {
 
@@ -68,7 +65,8 @@ const SignUp = () => {
 
 
             const obj = {
-                fullName: fullName,
+                firstName: firstName,
+                lastName: lastName,
                 email: email,
                 password: password
             };
@@ -77,7 +75,7 @@ const SignUp = () => {
 
             window.setTimeout(() => {
                 setLoading(false);
-              }, 1000);
+              }, 3000);
 
            
         /*    SERVICES.post(`admins/register`, obj)
@@ -100,22 +98,14 @@ const SignUp = () => {
     }
 
     return (
-        <div className="w-full max-h-screen h-screen justify-start items-center bg-white">
-            <main className="w-full h-full block">
-                <section className='flex relative justify-between items-center h-full'>
-                    <div className="w-1/2 h-full flex max-sm:hidden flex-col justify-center pl-10 py-10 pr-40 bg-signup-side-image bg-cover">
-                        <p className="text-[#FFF7F1] text-[45px] text-left" style={{ fontFamily: 'Gayathri Lato' }}>“</p>
-                        <h6 className="text-[#EF7822] text-[25px] mb-2 text-left font-semibold">Fun Fact</h6>
-                        <span className="text-[#FFFFFF] text-[14px] text-left leading-6">
-                        Did you know that the first online food order was a Pizza Hut pizza in 1994?
-The order was placed by a customer in California using their computer and a dial-up modem,.This marked the beginning of the online food delivery industry as we know it today!
-                        </span>
-                        <p className="text-[#FFFFFF] text-[14px] text-right mt-5 py-2 px-4">Pizzahut.com</p>
-                    </div>
-                    <div className="w-1/2 max-sm:w-full h-full bg-[#FFFFFF] py-10 px-20 max-sm:px-10 overflow-y-auto">
-                        <div className="w-full h-auto border border-[rgba(0, 0, 0, 0.125)] rounded-md p-10">
-                            <h2 className="text-[#000000] text-[27px] font-bold text-left">Sign Up</h2>
-                            <div className="flex space-x-1 mt-1"><span className="text-[#212529] text-[13px]">Already have an account?</span><a href={ROUTES.LOGIN} className="text-[#EF7822] text-[13px]">Login here</a></div>
+        <div className="w-full justify-start items-center bg-white">
+            <HeaderSimple />
+            <main className="w-full block">
+                <section className='flex relative justify-center bg-light-gray'>
+                    <div className="w-[55%] max-sm:w-full h-full py-10 px-20 max-sm:px-10 overflow-y-auto">
+                        <div className="w-full bg-white h-auto rounded-2xl p-5">
+                            <h2 className="text-[#000000] text-[30px] font-[500] text-left">Create Account</h2>
+                            <p className='w-full text-blue-gray lg:text-[15px] text-[14px] mb-5 text-left'>Let’s go! Create an account ✨</p>
                             <div className="mt-6 w-full">
                                 <form onSubmit={handleSubmit(onSubmit)} noValidate>
                                     {errorMsg ? (
@@ -137,53 +127,90 @@ The order was placed by a customer in California using their computer and a dial
                                         />
                                     ) : null}
 
-                                    <Input
-                                        label="Fullname"
-                                        {...register('fullName')}
-                                        type="text"
-                                        variant="outline"
-                                        className="mb-5"
-                                        error={errors.fullName?.message!}
-                                    />
+                                        <div className='w-full grid grid-cols-2 gap-4 mb-7'>
+                                            <Input
+                                                label="First Name"
+                                                {...register('firstName')}
+                                                type="text"
+                                                variant="outline"
+                                                placeholder='enter your first name'
+                                                error={errors.firstName?.message!}
+                                            />
 
-                                    <Input
-                                        label="Email"
-                                        {...register('email')}
-                                        type="email"
-                                        variant="outline"
-                                        className="mb-5"
-                                        error={errors.email?.message!}
-                                    />
+                                            <Input
+                                                label="Last Name"
+                                                {...register('lastName')}
+                                                type="text"
+                                                variant="outline"
+                                                placeholder='enter your last name'
+                                                error={errors.lastName?.message!}
+                                            />
+                                        </div>
 
-                                    <PasswordInput
-                                        label="Password"
-                                        {...register('password')}
-                                        error={errors.password?.message!}
-                                        variant="outline"
-                                        className="mb-5"
-                                    />
+                                        <Input
+                                            label="Email"
+                                            {...register('email')}
+                                            type="email"
+                                            variant="outline"
+                                            className="mb-5"
+                                            placeholder='enter your email'
+                                            error={errors.email?.message!}
+                                        />
 
-                                    <PasswordInput
-                                        label="Confirm password"
-                                        {...register('confirm')}
-                                        error={errors.confirm?.message!}
-                                        variant="outline"
-                                        className="mb-5"
-                                    />
+                                        <PasswordInput
+                                            label="Password"
+                                            {...register('password')}
+                                            error={errors.password?.message!}
+                                            variant="outline"
+                                            placeholder='enter your password'
+                                            className="mb-5"
+                                        />
 
-                                    <Checkbox {...register('terms')} label='By signing up, you agree to the terms and conditions'/>
+                                        <div className='w-full grid grid-cols-3 gap-2'>
+                                            <div className='flex gap-2 rounded-full bg-[#F8FAFC] p-2 items-center'>
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#94a3b8" className="w-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg> 
+                                                <span className='text-[11px] text-blue-gray min-w-[120px]'>At least 5 characters</span>
+                                            </div>
+                                            <div className='flex gap-2 rounded-full bg-[#F8FAFC] items-center p-2'>
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#94a3b8" className="w-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg> 
+                                                <span className='text-[11px] text-blue-gray min-w-[70px]'>1 lowercase</span>
+                                            </div>
+                                            <div className='flex gap-2 rounded-full bg-[#F8FAFC] items-center p-2'>
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#94a3b8" className="w-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg> 
+                                                <span className='text-[11px] text-blue-gray min-w-[70px]'>1 uppercase</span>
+                                            </div>
+                                            <div className='flex gap-2 rounded-full bg-[#F8FAFC] items-center p-2'>
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#94a3b8" className="w-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg> 
+                                                <span className='text-[11px] text-blue-gray min-w-[70px]'>1 number</span>
+                                            </div>
+                                            <div className='flex gap-2 rounded-full bg-[#F8FAFC] items-center p-2'>
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#94a3b8" className="w-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+</svg> 
+                                                <span className='text-[11px] text-blue-gray min-w-[120px]'>1 special character</span>
+                                            </div>
+                                        </div>
 
-                                    <Button
-                                        className="h-11 w-full mt-8"
-                                        loading={loading || !errors}
-                                        disabled={loading}
-                                    >
-                                        {loading ? "Loading..." : "Register"}
-                                    </Button>
+                                        <Button
+                                            className="h-14 w-full mt-8 text-white !font-[400] rounded-lg"
+                                            loading={loading || !errors}
+                                            disabled={loading}
+                                        >
+                                            {loading ? "Loading..." : "Sign Up"}
+                                        </Button>
 
                                 </form>
                             </div>
                         </div>
+                        <p className='mt-7 mb-10 text text-[#475569] lg:text-[14px] text-[13px]'>Already have an account? <a href={ROUTES.LOGIN} className='text-primary font-[600]'>Login</a></p>
                     </div>
                 </section>
             </main>

@@ -12,6 +12,7 @@ import TextArea from '../components/forms/text-area';
 import { ic_phone } from '../lib/images';
 import { ic_mail } from '../lib/images';
 import { ic_location } from '../lib/images';
+import Checkbox from '../components/forms/checkbox';
 //import { ROUTES } from '../lib/route-links';
 
 type FormValues = {
@@ -19,6 +20,7 @@ type FormValues = {
     lastName: string;
     email: string;
     message: string;
+    policy: boolean;
   }
 
   const contactSchema = yup.object().shape({
@@ -34,6 +36,8 @@ type FormValues = {
       .required('Email is required'),
     message: yup.string().required('Message is required')
       .min(10, 'Message must be at least 10 characters long'),
+    policy: yup.boolean().required("The privacy policy must be checked.")
+          .oneOf([true], "The privacy policy must be agreed to."),
   });
 
   const defaultValues = {
@@ -41,6 +45,7 @@ type FormValues = {
     lastName: "",
     email: "",
     message: "",
+    policy: false
   };
 
 const ContactUs = () => {   
@@ -188,8 +193,11 @@ const ContactUs = () => {
                               {...register('message')}
                               variant="solid"
                               placeholder='enter your message'
+                              className="mb-7 w-full"
                               error={errors.message?.message!}
                             />
+
+                            <Checkbox {...register('policy')} label='You agree to our friendly privacy policy'/>
 
                             <Button
                                 className="bg-primary border-primary text-white text-[13px] w-full rounded-lg h-14 mt-10"

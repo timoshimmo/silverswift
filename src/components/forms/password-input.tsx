@@ -79,9 +79,10 @@ const PasswordInput = React.forwardRef<HTMLInputElement, Props>(
             onClick={() => setShow((prev) => !prev)}
           >
             {show ? (
-              <EyeOff className="w-6 h-6" />
+              <Eye className="w-6 h-5" />
             ) : (
-              <Eye className="w-6 h-6" />
+              <EyeOff className="w-6 h-5" />
+              
             )}
           </label>
         </div>
@@ -93,7 +94,7 @@ const PasswordInput = React.forwardRef<HTMLInputElement, Props>(
               {forgotPageLink && forgotPassHelpText && (
                 <a
                   href={forgotPageLink}
-                  className="text-xs text-gray-300 transition-colors duration-200 focus:outline-none focus:text-accent-700 focus:font-semibold hover:text-accent-hover"
+                  className="text-[12px] text-[#94A3B8] transition-colors duration-200 focus:outline-none focus:text-accent-700 focus:font-semibold hover:text-accent-hover"
                 >
                   {forgotPassHelpText}
                 </a>
