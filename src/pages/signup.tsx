@@ -166,8 +166,8 @@ const SignUp = () => {
                                             className="mb-5"
                                         />
 
-                                        <div className='w-full grid grid-cols-3 gap-2'>
-                                            <div className='flex gap-2 rounded-full bg-[#F8FAFC] p-2 items-center'>
+                                        <div className='w-full grid lg:grid-cols-3 grid-cols-2 gap-2'>
+                                            <div className='flex gap-2 rounded-full bg-[#F8FAFC] p-2 items-center max-sm:col-span-2'>
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#94a3b8" className="w-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
 </svg> 
@@ -191,7 +191,7 @@ const SignUp = () => {
 </svg> 
                                                 <span className='text-[11px] text-blue-gray min-w-[70px]'>1 number</span>
                                             </div>
-                                            <div className='flex gap-2 rounded-full bg-[#F8FAFC] items-center p-2'>
+                                            <div className='flex gap-2 rounded-full bg-[#F8FAFC] items-center p-2 max-sm:col-span-2'>
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#94a3b8" className="w-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
 </svg> 
