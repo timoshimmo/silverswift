@@ -5,14 +5,12 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Alert from '../components/forms/alert';
 import Input from '../components/forms/input';
-import PasswordInput from '../components/forms/password-input';
 import HeaderSimple from '../layouts/generic/header-simple';
 import Button from '../components/forms/button';
 //import axios from 'axios';
 
 type FormValues = {
     email: string;
-    password: string;
   }
 
   const userSchema = yup.object().shape({
@@ -20,17 +18,14 @@ type FormValues = {
       .string()
       .email("Invalid email format")
       .required('Email is required'),
-    password:  yup.string().required('Password is required')
-      .min(5, 'Password must be at least 5 characters long'),
   });
 
   const defaultValues = {
-    email: "",
-    password: ""
+    email: ""
   };
   
 
-const Login = () => {
+const ResetPassword = () => {
 
     const [loading, setLoading] = useState(false);
     const [errorMsg, setErrorMsg] = useState("");
@@ -46,7 +41,7 @@ const Login = () => {
         resolver: yupResolver(userSchema),
       });
     
-    function onSubmit({ email, password }: FormValues) {
+    function onSubmit({ email }: FormValues) {
 
         if(!loading) {
 
@@ -54,8 +49,7 @@ const Login = () => {
 
 
             const obj = {
-                email: email,
-                password: password
+                email: email
             };
 
             console.log(obj);
@@ -87,12 +81,12 @@ const Login = () => {
     return (
         <div className="w-full bg-light-gray justify-start items-center">
             <HeaderSimple />
-            <main className="w-full block">
-                <section className='flex relative justify-center'>
-                    <div className="w-[55%] max-sm:w-full h-full lg:pt-20 pt-10 pb-10 px-20 max-sm:px-10 overflow-y-auto">
+            <main className="w-full min-h-screen block">
+                <section className='flex relative justify-center '>
+                    <div className="w-[55%] max-sm:w-full h-full lg:pt-20 pt-10 pb-10 px-20 max-sm:px-10">
                         <div className="w-full bg-white h-auto rounded-2xl p-5">
-                            <h2 className="text-[#000000] text-[30px] font-[500] text-left">Login To Your Account</h2>
-                            <p className='w-full text-blue-gray lg:text-[15px] text-[14px] mb-5 text-left'>Hey there! Welcome back 👋</p>
+                            <h2 className="text-[#000000] text-[30px] font-[500] text-left">Reset Password</h2>
+                            <p className='w-full text-blue-gray lg:text-[15px] text-[14px] mb-5 text-left'>Enter your email address to reset password</p>
                             <div className="mt-6 w-full">
                                 <form onSubmit={handleSubmit(onSubmit)} noValidate>
                                     {errorMsg ? (
@@ -124,29 +118,17 @@ const Login = () => {
                                             error={errors.email?.message!}
                                         />
 
-                                        <PasswordInput
-                                            label="Password"
-                                            {...register('password')}
-                                            error={errors.password?.message!}
-                                            variant="outline"
-                                            placeholder='enter your password'
-                                            forgotPassHelpText="Forgot Password?"
-                                            forgotPageLink={ROUTES.RESET_PASSWORD}
-                                            className="mb-5"
-                                        />
-
-
                                         <Button
                                             className="h-14 w-full mt-5 text-white !font-[400] rounded-lg"
                                             loading={loading || !errors}
                                             disabled={loading}
                                         >
-                                            {loading ? "Loading..." : "Log in"}
+                                            {loading ? "Loading..." : "Send Reset Link"}
                                         </Button>
                                 </form>
                             </div>
+                            <a href={ROUTES.LOGIN} className='text-primary font-[600] my-7 text text-[#475569] lg:text-[14px] text-[13px] block'>Back to Login</a>
                         </div>
-                        <p className='mt-7 mb-10 text text-[#475569] lg:text-[14px] text-[13px]'>Don't have an account? <a href={ROUTES.SIGNUP} className='text-primary font-[600]'>Create Account Instead</a></p>
                     </div>
                 </section>
             </main>
@@ -154,4 +136,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default ResetPassword;
