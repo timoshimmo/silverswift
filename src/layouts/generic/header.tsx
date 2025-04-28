@@ -85,7 +85,7 @@ const Header = () => {
                 <div className="flex items-center gap-4">
                     <Typography
                         as="a"
-                        href="#"
+                        href={ROUTES.INDEX}
                         className="mr-4 cursor-pointer py-1.5 font-medium"
                     >
                         <img
@@ -156,12 +156,20 @@ const Header = () => {
             <Collapse open={openNav} className={openNav ? 'flex flex-col !h-full' : 'flex flex-col'}>
                 <div className="block lg:hidden">{navList}</div>
                 <div className="lg:hidden w-full flex flex-col grow items-center gap-4 justify-end px-5 mb-20">
-                    <Button fullWidth variant="text" size="sm" className="py-3 rounded-lg border border-primary bg-[#FFFFFF] text-secondary text-[13px] font-[400]">
-                        <span>Login</span>
-                    </Button>
-                    <Button fullWidth variant="gradient" size="sm" className="py-3 rounded-lg bg-primary text-[#FFFFFF] text-[13px] font-[400]">
-                        <span>Get Started</span>
-                    </Button>
+                    <Typography
+                            as="a"
+                            href={ROUTES.LOGIN}
+                            className="w-full py-3 rounded-lg border uppercase border-primary bg-[#FFFFFF] text-secondary text-[13px] font-[400]"
+                        >
+                           LOGIN
+                        </Typography>
+                        <Typography
+                            as="a"
+                            href={ROUTES.SIGNUP}
+                            className="w-full py-3 rounded-lg bg-primary text-[#FFFFFF] text-[13px] font-[400] uppercase"
+                        >
+                           GET STARTED
+                        </Typography>
                 </div>
             </Collapse>
         </Navbar>
