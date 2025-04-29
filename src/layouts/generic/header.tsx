@@ -3,7 +3,6 @@ import { silverswidtLogo } from '../../lib/images';
 import {
     Navbar,
     Typography,
-    Button,
     IconButton,
     Collapse
   } from "@material-tailwind/react";
