@@ -24,7 +24,7 @@ const HowItWorks = () => {
                         <p className='text-blue-gray font-[400] text-[10px] lg:text-[14px] py-3 max-sm:hidden'>Use Multiple Accounts</p>
                     </div>
                     <div className='w-full pt-10 lg:mt-5 grid grid-cols-3 gap-5'>
-                        <div className='max-sm:col-span-3 p-5 max-sm:p-3 rounded-md border border-[#E4E7EC]'>   
+                        {/* <div className='max-sm:col-span-3 p-5 max-sm:p-3 rounded-md border border-[#E4E7EC]'>   
                             <p className='text-secondary text-[16px] font-[500] text-left my-3'>Access Registration Page</p>
                             <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>To get started as a new user, kindly click on the Sign Up button on the homepage header navbar section and this will redirect you to the registration page.<br /><br />NB: YOU NEED TO PAY THE SUM OF ₦3,000 FOR REGISTRATION FEE ONCE YOU'RE REDIRECTED TO THE PAYMENT SECTION AFTER A SUCCESSFUL REGISTRATION<br /><br />NB: IF YOU UPLOADED A FAKE PAYMENT PROOF, YOUR ACCOUNT WOULD BE FLAGGED AND WOULD NOT HAVE ACCESS TO LOGIN USING YOUR CREDENTIALS.</span>
                         </div>
@@ -35,6 +35,24 @@ const HowItWorks = () => {
                         <div className='max-sm:col-span-3 p-5 max-sm:p-3 rounded-md border border-[#E4E7EC]'>   
                             <p className='text-secondary text-[16px] font-[500] text-left my-3'>Account Activation Processes</p>
                             <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>If you transferred to our bank account manually, you would need to upload a proof of payment and this payment proof would be reviewed and your noble merry member account would be activated within 24-48hrs, that is when you can now have access to login to your dashboard.<br /><br />But if you're using/used the flutterwave online payment gateway option, your noble merry member account would be activated instantly after successful payment and you would be redirected to your noble merry dashboard from the payment gateway.</span>
+                        </div>
+
+                        */}
+                         <div className='max-sm:col-span-3 p-5 max-sm:p-3 rounded-md border border-[#E4E7EC]'>   
+                            <p className='text-secondary text-[16px] font-[500] text-left my-3'>Access Registration Page</p>
+                            <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>Click the GET STARTED or SIGN UP button at the top of the page to go to registration page and create your account.</span>
+                        </div>
+                        <div className='max-sm:col-span-3 p-5 max-sm:p-3 rounded-md border border-[#E4E7EC]'>   
+                            <p className='text-secondary text-[16px] font-[500] text-left my-3'>Input correct details & Submit</p>
+                            <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>Fill in your correct details. The "Referral ID" is optional.<br />After submitting the form and successful registration, you will be redirected to the payment page to pay ₦3,000 registration fee.<br /><br /><strong>Note: </strong>Do not upload fake proof of payment in order not to delay your registration.</span>
+                        </div>
+                        <div className='max-sm:col-span-3 p-5 max-sm:p-3 rounded-md border border-[#E4E7EC]'>   
+                            <p className='text-secondary text-[16px] font-[500] text-left my-3'>Account Activation Processes</p>
+                            <p className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>For payment, choose either:</p>
+                            <ul className='list-disc mb-5 px-5'>
+                                <li className='text-blue-gray text-left'><span className='text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'><strong>Manual Bank Transfer: </strong>Upload payment proof, and your account will be activated within 48 hours.  Payment confirmation allows you access to your dashboard.</span></li>
+                                <li className='text-blue-gray text-left'><span className='text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'><strong>Online Payment (PAYSTACK or FLUTTERWAVE): </strong>Your account will be activated instantly to give you access to your dashboard</span></li>
+                          </ul>
                         </div>
                     </div>
                 </section>

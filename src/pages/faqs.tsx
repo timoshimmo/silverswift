@@ -46,11 +46,11 @@ const Faqs = () => {
         },
         {
             label: 'What steps can I take to resolve the problems?',
-            content: 'SILVERSWIFT VENTURES is a savings and food network marketing and distribution organization, a gateway to ensure your household food security and financial stability.',
+            content: 'Write and describe your issue to support@silverswift.com  and to  https://chat.whatsapp.com/EsTlRZeZpjx8ntEJ2bdX0k to lay your complaint (Note, once your issue is resolved, you are expected  to exit the WhatsApp complaint channel immediately. Failure to exit will attract sanctions)',
         },
         {
             label: 'What is the maximum number of accounts I can register in a month?',
-            content: 'We aim to create a sustainable and empowering network where individuals and families can save, access affordable food supplies, and build long-term financial resilience.',
+            content: 'Up to 1000 accounts. However, Registration up to 50 accounts and above with one phone number or email address requires a 50% lumpsum initial payment , and balance is completed within 7 months.',
         },	
 
     ];

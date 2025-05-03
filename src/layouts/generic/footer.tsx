@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { silverswidtLogo } from '../../lib/images';
+//import { silverswidtLogo } from '../../lib/images';
+import { ssvLogo } from '../../lib/images';
 import { ROUTES } from '../../lib/route-links';
 import {
     Typography,
@@ -104,7 +105,7 @@ const Footer = () => {
                             className="cursor-pointer font-medium"
                         >
                             <img
-                                src={silverswidtLogo}
+                                src={ssvLogo}
                                 alt=""
                                 title="Logo"
                                 className='w-16'
@@ -113,8 +114,7 @@ const Footer = () => {
                         <h4 className='text-primary font-bold text-[20px]'>SilverSwift Ventures</h4>
                     </div>
                     <p className='text-[#344054] text-[14px] font-normal text-left my-8'>Be the first to receive all the recent updates, articles, and valuable materials.</p>
-                    
-                    
+
                     <form onSubmit={handleSubmit(onSubmit)} noValidate>
 
                         {errorMsg ? (
@@ -158,7 +158,6 @@ const Footer = () => {
 
                         </div>
                     </form>
-                    
                 </div>
                 <div className='w-full flex justify-center'>
                     <div>
@@ -168,6 +167,7 @@ const Footer = () => {
                             <li className="mb-4"><a href={ROUTES.HOW_IT_WORKS} className="text-[#667185] text-[15px] font-[500] w-full block text-left">How it works</a></li>
                             <li className="mb-4"><a href="/" className="text-[#667185] text-[15px] font-[500] w-full block text-left">Gallery</a></li>
                         </ul>
+                        
                     </div>     
                 </div>
                     
@@ -282,7 +282,7 @@ const Footer = () => {
                     className="cursor-pointer font-medium"
                 >
                     <img
-                        src={silverswidtLogo}
+                        src={ssvLogo}
                         alt=""
                         title="Logo"
                         className='w-9'

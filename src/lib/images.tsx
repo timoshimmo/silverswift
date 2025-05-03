@@ -1,5 +1,7 @@
 
 export { default as silverswidtLogo } from "../assets/images/silverswift_logo.png"; 
+export { default as ssvLogo } from "../assets/images/ssv_logo.png"; 
+export { default as ssvTransparentLogo } from "../assets/images/ssv_logo_transparet.png"; 
 export { default as homeBanner } from "../assets/images/home_banner.png";
 export { default as appStoreLogo } from '../assets/images/appstore.png';
 export { default as playStoreLogo } from '../assets/images/playstore.png';

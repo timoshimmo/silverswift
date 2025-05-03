@@ -11,11 +11,13 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import { Carousel, IconButton } from "@material-tailwind/react";
 import { homeBanner } from '../lib/images';
 import { ic_community_empowerment } from '../lib/images';
+/*
 import { ic_financial_inclusion } from '../lib/images';
 import { ic_innovation_simplicity } from '../lib/images';
 import { ic_intergrity_accountability } from '../lib/images';
 import { ic_sustainability_growth } from '../lib/images';
 import { ic_trust_transparency } from '../lib/images';
+*/
 import { img_home_how_started } from '../lib/images';
 import { ic_rocket } from '../lib/images';
 import { img_home_testimonial } from '../lib/images';
@@ -67,7 +69,6 @@ const Home = () => {
                             <a href={ROUTES.HOW_IT_WORKS} className='lg:w-[160px] w-full rounded-lg border border-primary py-4 px-8 text-primary text-[13px] font-semibold'>How it Works</a>
                             <a href={ROUTES.SIGNUP} className='lg:w-[160px] w-full rounded-lg bg-primary py-4 px-8 text-[#FFFFFF] text-[13px] font-semibold max-sm:mt-3'>Get Started</a>
                         </div>
-                        
                     </div>
                     <div className='w-full flex justify-center mt-10'>
                         <img className='w-full rounded-lg' src={homeBanner} alt="Banner"/>
@@ -170,7 +171,7 @@ const Home = () => {
                     <h4 className='lg:text-[30px] text-[22px] font-semibold text-secondary mb-3'>Why Choose Us</h4>
                     <p className='lg:w-2/4 w-full text-blue-gray text-center lg:text-[17px] text-[14px] mx-auto mb-8'>SilverSwift Ventures empowers your financial stability and food security with commitment, integrity, and passion for a prosperous future.</p>
                     <div className='w-full py-5 grid grid-cols-3 gap-5'>
-                        <div className='max-sm:col-span-3 p-5 h-[250px] max-sm:p-3 rounded border border-[#E4E7EC]'>   
+                        <div className='max-sm:col-span-3 lg:col-start-2 lg:col-end-3 p-5 h-[250px] max-sm:p-3 rounded border border-[#E4E7EC]'>   
                             <img 
                                 src={ic_community_empowerment}
                                 alt='Community Empowerment Icon'
@@ -179,56 +180,59 @@ const Home = () => {
                             <p className='text-secondary text-[16px] font-[500] text-left my-3'>Community Empowerment</p>
                             <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>We believe in the power of collective saving. By working together, we strengthen our community and enable everyone to achieve their financial goals, no matter how big or small.</span>
                         </div>
+                        {/*
+                            <div className='max-sm:col-span-3 p-5 h-[250px] max-sm:p-3 rounded border border-[#E4E7EC]'>
+                                <img 
+                                    src={ic_trust_transparency}
+                                    alt='Trust & Transparency Icon'
+                                    className='w-10'
+                                />
+                                <p className='text-secondary text-[16px] font-[500] text-left my-3'>Trust & Transparency</p>
+                                <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>Trust is at the heart of everything we do. We are committed to being transparent in all our processes, ensuring our users feel confident and secure in their savings journey.</span>
+                            </div>
 
-                        <div className='max-sm:col-span-3 p-5 h-[250px] max-sm:p-3 rounded border border-[#E4E7EC]'>
-                            <img 
-                                src={ic_trust_transparency}
-                                alt='Trust & Transparency Icon'
-                                className='w-10'
-                            />
-                            <p className='text-secondary text-[16px] font-[500] text-left my-3'>Trust & Transparency</p>
-                            <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>Trust is at the heart of everything we do. We are committed to being transparent in all our processes, ensuring our users feel confident and secure in their savings journey.</span>
-                        </div>
+                            <div className='max-sm:col-span-3 p-5 h-[250px] max-sm:p-3 rounded border border-[#E4E7EC]'>
+                                <img 
+                                    src={ic_financial_inclusion}
+                                    alt='Financial Inclusion Icon'
+                                    className='w-10'
+                                />
+                                <p className='text-secondary text-[16px] font-[500] text-left my-3'>Financial Inclusion</p>
+                                <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>Everyone deserves access to financial opportunities. We strive to make saving accessible and inclusive, providing tools and resources for individuals from all walks of life to build a secure financial future.</span>
+                            </div>
 
-                        <div className='max-sm:col-span-3 p-5 h-[250px] max-sm:p-3 rounded border border-[#E4E7EC]'>
-                            <img 
-                                src={ic_financial_inclusion}
-                                alt='Financial Inclusion Icon'
-                                className='w-10'
-                            />
-                            <p className='text-secondary text-[16px] font-[500] text-left my-3'>Financial Inclusion</p>
-                            <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>Everyone deserves access to financial opportunities. We strive to make saving accessible and inclusive, providing tools and resources for individuals from all walks of life to build a secure financial future.</span>
-                        </div>
+                            <div className='max-sm:col-span-3 p-5 h-[250px] max-sm:p-3 rounded border border-[#E4E7EC]'>
+                                <img 
+                                    src={ic_innovation_simplicity}
+                                    alt='Innovation & Simplicity Icon'
+                                    className='w-10'
+                                />
+                                <p className='text-secondary text-[16px] font-[500] text-left my-3'>Innovation & Simplicity</p>
+                                <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>We embrace innovation to create simple, user-friendly solutions that make saving easier, smarter, and more effective for all our users.</span>
+                            </div>
 
-                        <div className='max-sm:col-span-3 p-5 h-[250px] max-sm:p-3 rounded border border-[#E4E7EC]'>
-                            <img 
-                                src={ic_innovation_simplicity}
-                                alt='Innovation & Simplicity Icon'
-                                className='w-10'
-                            />
-                            <p className='text-secondary text-[16px] font-[500] text-left my-3'>Innovation & Simplicity</p>
-                            <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>We embrace innovation to create simple, user-friendly solutions that make saving easier, smarter, and more effective for all our users.</span>
-                        </div>
+                            <div className='max-sm:col-span-3 p-5 h-[250px] max-sm:p-3 rounded border border-[#E4E7EC]'>
+                                <img 
+                                    src={ic_intergrity_accountability}
+                                    alt='Integrity & Accountability Icon'
+                                    className='w-10'
+                                />
+                                <p className='text-secondary text-[16px] font-[500] text-left my-3'>Integrity & Accountability</p>
+                                <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>We operate with the highest level of integrity and take full responsibility for our services. Our commitment to accountability ensures that we always deliver on our promises and maintain the trust of our users.</span>
+                            </div>
 
-                        <div className='max-sm:col-span-3 p-5 h-[250px] max-sm:p-3 rounded border border-[#E4E7EC]'>
-                            <img 
-                                src={ic_intergrity_accountability}
-                                alt='Integrity & Accountability Icon'
-                                className='w-10'
-                            />
-                            <p className='text-secondary text-[16px] font-[500] text-left my-3'>Integrity & Accountability</p>
-                            <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>We operate with the highest level of integrity and take full responsibility for our services. Our commitment to accountability ensures that we always deliver on our promises and maintain the trust of our users.</span>
-                        </div>
-
-                        <div className='max-sm:col-span-3 p-5 h-[250px] max-sm:p-3 rounded border border-[#E4E7EC]'>
-                            <img 
-                                src={ic_sustainability_growth}
-                                alt='Sustainability & Growth Icon'
-                                className='w-10'
-                            />
-                            <p className='text-secondary text-[16px] font-[500] text-left my-3'>Sustainability & Growth</p>
-                            <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>We are dedicated to helping our users grow their savings in a sustainable way. By promoting long-term financial growth and stability, we contribute to a more prosperous future for everyone.</span>
-                        </div>
+                            <div className='max-sm:col-span-3 p-5 h-[250px] max-sm:p-3 rounded border border-[#E4E7EC]'>
+                                <img 
+                                    src={ic_sustainability_growth}
+                                    alt='Sustainability & Growth Icon'
+                                    className='w-10'
+                                />
+                                <p className='text-secondary text-[16px] font-[500] text-left my-3'>Sustainability & Growth</p>
+                                <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>We are dedicated to helping our users grow their savings in a sustainable way. By promoting long-term financial growth and stability, we contribute to a more prosperous future for everyone.</span>
+                            </div>
+                        
+                        */}
+                        
                     </div>
                 </section>
 
@@ -266,47 +270,64 @@ const Home = () => {
 
                 <section className='w-full pt-20 pb-10 lg:px-20 px-5'>
                     <h4 className='lg:text-[30px] text-[22px] font-semibold text-secondary mb-3'>Benefits to Savers</h4>
-                    <p className='lg:w-2/4 w-full text-blue-gray text-center lg:text-[17px] text-[14px] mx-auto mb-8'>Enjoy guaranteed returns, cashback, food rewards, and loyalty perks, all while securing your financial future.</p>
-                    <div className='w-full lg:pb-4 flex max-sm:flex-col gap-4'>
-                        <div className='w-full lg:p-5 lg:h-[200px] h-[170px] p-3 lg:border-b lg:border-[#E4E7EC]'>   
-                            <img 
-                                src={ic_rocket}
-                                alt='Community Empowerment Icon'
-                                className='lg:w-8 w-6'
-                            />
-                            <p className='text-[#000000] text-[16px] font-[500] text-left my-3'>Guaranteed Returns on Savings</p>
-                            <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>Enjoy reliable and guaranteed returns on your savings, ensuring your financial goals are always within reach.</span>
+                    <p className='lg:w-2/4 w-full text-blue-gray text-center lg:text-[17px] text-[14px] mx-auto mb-20'>Enjoy guaranteed returns, cashback, food rewards, and loyalty perks, all while securing your financial future.</p>
+                    
+                    <div className='flex lg:justify-between gap-10 max-sm:flex-col'>
+                        <div className='lg:w-1/2 w-full max-sm:order-2'>
+                            <div className='w-full lg:pb-4 flex max-sm:flex-col gap-4'>
+                                <div className='w-full lg:p-5 lg:h-[200px] h-[170px] p-3 lg:border-b lg:border-[#E4E7EC]'>   
+                                    <img 
+                                        src={ic_rocket}
+                                        alt='Community Empowerment Icon'
+                                        className='lg:w-8 w-6'
+                                    />
+                                    <p className='text-[#000000] text-[16px] font-[500] text-left my-3'>Guarantee Returns</p>
+                                    <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>Enjoy reliable and guaranteed returns on your savings, ensuring your financial goals are always within reach.</span>
+                                </div>
+                                <div className="max-sm:hidden inline-block min-h-[1em] w-0.5 self-stretch bg-[#E4E7EC] mb-4"></div> 
+                                <div className='w-full lg:p-5 lg:h-[200px] h-[170px] max-sm:p-3 lg:border-b lg:border-[#E4E7EC]'>   
+                                    <img 
+                                        src={ic_rocket}
+                                        alt='Community Empowerment Icon'
+                                        className='lg:w-8 w-6'
+                                    />
+                                    <p className='text-[#000000] text-[16px] font-[500] text-left my-3'>Food Incentive</p>
+                                    <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>Access exclusive foodstuff incentives, providing essential supplies for your household while you save.</span>
+                                </div> 
+                            </div>
+                            <div className='w-full flex max-sm:flex-col gap-4'>
+                                <div className='w-full lg:p-5 lg:h-[200px] h-[170px] p-3'>   
+                                    <img 
+                                        src={ic_rocket}
+                                        alt='Community Empowerment Icon'
+                                        className='lg:w-8 w-6'
+                                    />
+                                    <p className='text-[#000000] text-[16px] font-[500] text-left my-3'>100% Cashback</p>
+                                    <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>Get rewarded with up to 100% cashback on your savings, boosting your earnings and making your financial journey even more rewarding.</span>
+                                </div>
+                                <div className="max-sm:hidden inline-block min-h-[1em] w-0.5 self-stretch bg-[#E4E7EC]"></div> 
+                                <div className='w-full lg:p-5 lg:h-[200px] h-[170px] p-3'>   
+                                    <img 
+                                        src={ic_rocket}
+                                        alt='Community Empowerment Icon'
+                                        className='lg:w-8 w-6' 
+                                    />
+                                    <p className='text-[#000000] text-[16px] font-[500] text-left my-3'>Loyalty Perks</p>
+                                    <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>Benefit from our assured loyalty program, ensuring continuous rewards and benefits for your ongoing commitment to SilverSwift Ventures.</span>
+                                </div>
+                            </div>
+                            <div className='w-full flex gap-x-4 justify-center max-sm:flex-col max-sm:items-center mt-20'>
+                                <a href={ROUTES.HOW_IT_WORKS} className='lg:w-[160px] w-full rounded-lg border border-primary py-4 px-8 text-primary text-[13px] font-semibold'>How it Works</a>
+                                <a href={ROUTES.SIGNUP} className='lg:w-[160px] w-full rounded-lg bg-primary py-4 px-8 text-[#FFFFFF] text-[13px] font-semibold max-sm:mt-3'>Get Started</a>
+                            </div>
                         </div>
-                        <div className="max-sm:hidden inline-block min-h-[1em] w-0.5 self-stretch bg-[#E4E7EC] mb-4"></div> 
-                        <div className='w-full lg:p-5 lg:h-[200px] h-[170px] max-sm:p-3 lg:border-b lg:border-[#E4E7EC]'>   
-                            <img 
-                                src={ic_rocket}
-                                alt='Community Empowerment Icon'
-                                className='lg:w-8 w-6'
+                        <div className='lg:w-1/2 w-full flex lg:justify-end max-sm:order-1 justify-center'>
+                            <img
+                                src={img_home_how_started}
+                                alt=""
+                                className='w-full'
                             />
-                            <p className='text-[#000000] text-[16px] font-[500] text-left my-3'>Foodstuffs Incentives</p>
-                            <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>Access exclusive foodstuff incentives, providing essential supplies for your household while you save.</span>
-                        </div> 
-                    </div>
-                    <div className='w-full flex max-sm:flex-col gap-4'>
-                        <div className='w-full lg:p-5 lg:h-[200px] h-[170px] p-3'>   
-                            <img 
-                                src={ic_rocket}
-                                alt='Community Empowerment Icon'
-                                className='lg:w-8 w-6'
-                            />
-                            <p className='text-[#000000] text-[16px] font-[500] text-left my-3'>100% Cashback Incentives</p>
-                            <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>Get rewarded with up to 100% cashback on your savings, boosting your earnings and making your financial journey even more rewarding.</span>
-                        </div>
-                        <div className="max-sm:hidden inline-block min-h-[1em] w-0.5 self-stretch bg-[#E4E7EC]"></div> 
-                        <div className='w-full lg:p-5 lg:h-[200px] h-[170px] p-3'>   
-                            <img 
-                                src={ic_rocket}
-                                alt='Community Empowerment Icon'
-                                className='lg:w-8 w-6' 
-                            />
-                            <p className='text-[#000000] text-[16px] font-[500] text-left my-3'>Assured Service Loyalty</p>
-                            <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>Benefit from our assured loyalty program, ensuring continuous rewards and benefits for your ongoing commitment to SilverSwift Ventures.</span>
+
                         </div>
                     </div>
                 </section>
@@ -322,7 +343,7 @@ const Home = () => {
                         </TimelineItem>
                         <TimelineItem>
                             <TimelineSeparator className='h-[180px]'>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#C829A9", margin: 0, height: 35, width: 35, borderWidth: 10 }}/>
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 35, width: 35, borderWidth: 10 }}/>
                                 <TimelineConnector className="!bg-primary !w-[10px]"/>
                             </TimelineSeparator>
                             <TimelineContent className='flex justify-end'>
@@ -338,7 +359,7 @@ const Home = () => {
                         </TimelineItem>
                         <TimelineItem>
                             <TimelineSeparator className='h-[180px]'>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#C829A9", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
                                 <TimelineConnector className="!bg-primary !w-[10px]" />
                             </TimelineSeparator>
                             <TimelineContent>
@@ -355,7 +376,7 @@ const Home = () => {
 
                         <TimelineItem>
                             <TimelineSeparator className='h-[180px]'>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#C829A9", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
                                 <TimelineConnector className="!bg-primary !w-[10px]" />
                             </TimelineSeparator>
                             <TimelineContent className='flex justify-end'>
@@ -371,7 +392,7 @@ const Home = () => {
                         </TimelineItem>
                         <TimelineItem>
                             <TimelineSeparator className='h-[180px]'>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#C829A9", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
                                 <TimelineConnector className="!bg-primary !w-[10px]" />
                             </TimelineSeparator>
                             <TimelineContent>
@@ -388,7 +409,7 @@ const Home = () => {
 
                         <TimelineItem>
                             <TimelineSeparator className='h-[180px]'>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#C829A9", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
                                 <TimelineConnector className="!bg-primary !w-[10px]" />
                             </TimelineSeparator>
                             <TimelineContent className='flex justify-end'>
@@ -405,7 +426,7 @@ const Home = () => {
 
                         <TimelineItem>
                             <TimelineSeparator className='h-[180px]'>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#C829A9", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
                                 <TimelineConnector className="!bg-primary !w-[10px]" />
                             </TimelineSeparator>
                             <TimelineContent>
@@ -422,7 +443,7 @@ const Home = () => {
 
                         <TimelineItem>
                             <TimelineSeparator className='h-[180px]'>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#C829A9", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
                                 <TimelineConnector className="!bg-primary !w-[10px]" />
                             </TimelineSeparator>
                             <TimelineContent className='flex justify-end'>
@@ -439,7 +460,7 @@ const Home = () => {
 
                         <TimelineItem>
                             <TimelineSeparator className='h-[180px]'>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#C829A9", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
                                 <TimelineConnector className="!bg-primary !w-[10px]" />
                             </TimelineSeparator>
                             <TimelineContent>
@@ -475,7 +496,7 @@ const Home = () => {
                         </TimelineItem>
                         <TimelineItem>
                             <TimelineSeparator>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#C829A9", margin: 0, height: 30, width: 30, borderWidth: 10 }}/>
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 10 }}/>
                                 <TimelineConnector className="!bg-primary !w-[8px] h-[100px]"/>
                             </TimelineSeparator>
                             <TimelineContent>
@@ -486,7 +507,7 @@ const Home = () => {
                         </TimelineItem>
                         <TimelineItem>
                             <TimelineSeparator>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#C829A9", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
                                 <TimelineConnector className="!bg-primary !w-[8px] h-[100px]" />
                             </TimelineSeparator>
                             <TimelineContent>
@@ -498,7 +519,7 @@ const Home = () => {
 
                         <TimelineItem>
                             <TimelineSeparator>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#C829A9", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
                                 <TimelineConnector className="!bg-primary !w-[8px] h-[100px]" />
                             </TimelineSeparator>
                             <TimelineContent className='flex justify-end'>
@@ -509,7 +530,7 @@ const Home = () => {
                         </TimelineItem>
                         <TimelineItem>
                             <TimelineSeparator>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#C829A9", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
                                 <TimelineConnector className="!bg-primary !w-[8px] h-[100px]" />
                             </TimelineSeparator>
                             <TimelineContent>
@@ -521,7 +542,7 @@ const Home = () => {
 
                         <TimelineItem>
                             <TimelineSeparator>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#C829A9", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
                                 <TimelineConnector className="!bg-primary !w-[8px] h-[100px]" />
                             </TimelineSeparator>
                             <TimelineContent className='flex justify-end'>
@@ -533,7 +554,7 @@ const Home = () => {
 
                         <TimelineItem>
                             <TimelineSeparator>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#C829A9", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
                                 <TimelineConnector className="!bg-primary !w-[8px] h-[100px]" />
                             </TimelineSeparator>
                             <TimelineContent>
@@ -545,7 +566,7 @@ const Home = () => {
 
                         <TimelineItem>
                             <TimelineSeparator>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#C829A9", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
                                 <TimelineConnector className="!bg-primary !w-[8px] h-[100px]" />
                             </TimelineSeparator>
                             <TimelineContent className='flex justify-end'>
@@ -554,10 +575,9 @@ const Home = () => {
                                 </div>
                             </TimelineContent>
                         </TimelineItem>
-
                         <TimelineItem>
                             <TimelineSeparator>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#C829A9", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
                                 <TimelineConnector className="!bg-primary !w-[8px] h-[100px] rounded-b-lg" />
                             </TimelineSeparator>
                             <TimelineContent>
