@@ -316,7 +316,7 @@ const Home = () => {
                                     <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>Benefit from our assured loyalty program, ensuring continuous rewards and benefits for your ongoing commitment to SilverSwift Ventures.</span>
                                 </div>
                             </div>
-                            <div className='w-full flex gap-x-4 justify-center max-sm:flex-col max-sm:items-center mt-20'>
+                            <div className='w-full flex gap-x-4 justify-center max-sm:flex-col max-sm:items-center lg:mt-20 mt-10'>
                                 <a href={ROUTES.HOW_IT_WORKS} className='lg:w-[160px] w-full rounded-lg border border-primary py-4 px-8 text-primary text-[13px] font-semibold'>How it Works</a>
                                 <a href={ROUTES.SIGNUP} className='lg:w-[160px] w-full rounded-lg bg-primary py-4 px-8 text-[#FFFFFF] text-[13px] font-semibold max-sm:mt-3'>Get Started</a>
                             </div>

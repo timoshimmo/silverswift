@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import parse from 'html-react-parser';
 
 type PanelProps = {
     label: string,
@@ -45,7 +46,7 @@ type PanelProps = {
               style={ innerStyle }
               aria-hidden={ !isActive }>
               <p className='panel__content'>
-                { content }
+                { parse(content) }
               </p>
             </div>
       </div>

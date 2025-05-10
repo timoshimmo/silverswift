@@ -11,8 +11,6 @@ import {
 
 const Header = () => {
 
-    //box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.11);
-
   const [openNav, setOpenNav] = useState(false);
  
   useEffect(() => {
@@ -96,7 +94,7 @@ const Header = () => {
                               className='w-10 lg:w-14'
                           />
                       </Typography>
-                      <h4 className='text-primary font-bold text-[20px]'>SilverSwift Ventures</h4>
+                      <h4 className='text-primary font-bold text-[20px] max-sm:hidden'>SilverSwift Ventures</h4>
                   </div>
                 
                 <div className="hidden lg:block">{navList}</div>
@@ -176,9 +174,6 @@ const Header = () => {
                 </div>
             </Collapse>
         </Navbar>
-            
-        
-
     );
 };
 

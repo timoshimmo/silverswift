@@ -46,7 +46,7 @@ const Faqs = () => {
         },
         {
             label: 'What steps can I take to resolve the problems?',
-            content: 'Write and describe your issue to support@silverswift.com  and to  https://chat.whatsapp.com/EsTlRZeZpjx8ntEJ2bdX0k to lay your complaint (Note, once your issue is resolved, you are expected  to exit the WhatsApp complaint channel immediately. Failure to exit will attract sanctions)',
+            content: 'Write and describe your issue to <a href="mailto:support@silverswift.com" rel="noopener noreferrer" className="text-[#60B5FF] underline">support@silverswift.com</a> or to our <a href="https://chat.whatsapp.com/EsTlRZeZpjx8ntEJ2bdX0k" target="_blank" rel="noopener noreferrer" className="text-[#60B5FF] underline">WhatsApp</a> to lay your complaint (Note, once your issue is resolved, you are expected  to exit the WhatsApp complaint channel immediately. Failure to exit will attract sanctions)',
         },
         {
             label: 'What is the maximum number of accounts I can register in a month?',
