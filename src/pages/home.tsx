@@ -250,19 +250,19 @@ const Home = () => {
                         <div className='w-full mt-7'>
                             <div className='flex gap-4'>
                                 <span className='h-8 w-8 flex justify-center items-center rounded-full bg-primary-gray text-primary font-semibold text-[14px]'>1</span>
-                                <p className='w-5/6 lg:text-[14px] text-[13px] text-left text-blue-gray font-[300]'>Pay an initial membership registration sum of ₦5, 000 (NON-REFUNDABLE registration fee of ₦2,000 and savers First 2 weeks' thrift of ₦3,000 )</p>
+                                <p className='w-5/6 lg:text-[14px] text-[13px] text-left text-blue-gray font-[300]'>Pay an initial membership registration sum of ₦5,000 (NON-REFUNDABLE registration fee of ₦2,000 and savers First 2 weeks' thrift of ₦3,000 )</p>
                             </div>
                         </div>
                         <div className='w-full mt-7'>
                             <div className='flex gap-4'>
                                 <span className='h-8 w-8 flex justify-center items-center rounded-full bg-primary-gray text-primary font-semibold text-[14px]'>2</span>
-                                <p className='w-5/6 lg:text-[14px] text-[13px] text-left text-blue-gray font-[300]'>Click & fill the google form link <a href="https://forms.gle/dQXgiDAfddTghRrAA" className='text-primary hover:text-primary focus:text-priamry'>https://forms.gle/dQXgiDAfddTghRrAA</a> to register your profile and upload payment receipt.</p>
+                                <p className='w-5/6 lg:text-[14px] text-[13px] text-left text-blue-gray font-[300]'>Click <a href={ROUTES.SIGNUP} className='text-primary hover:text-primary focus:text-priamry'>here</a> to register your profile and upload payment receipt.</p>
                             </div>
                         </div>
                         <div className='w-full mt-7'>
                             <div className='flex gap-4'>
                                 <span className='h-8 w-8 flex justify-center items-center rounded-full bg-primary-gray text-primary font-semibold text-[14px]'>3</span>
-                                <p className='w-5/6 lg:text-[14px] text-[13px] text-left text-blue-gray font-[300]'>Click the WhatsApp link on the google form to join our New Member WhatsApp group</p>
+                                <p className='w-5/6 lg:text-[14px] text-[13px] text-left text-blue-gray font-[300]'>Click the <a href="https://chat.whatsapp.com/EsTlRZeZpjx8ntEJ2bdX0k"className='text-primary hover:text-primary focus:text-priamry' target='_blank' rel="noopener noreferrer">here </a> to join our New Member WhatsApp group</p>
                             </div>
                         </div>
                     </div>
