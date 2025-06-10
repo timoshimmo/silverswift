@@ -12,8 +12,6 @@ import { team1 } from '../lib/images';
 import { team2 } from '../lib/images';
 import { team3 } from '../lib/images';
 
-//import { ROUTES } from '../lib/route-links';
-
 const About = () => {   
 
     return (
@@ -65,6 +63,7 @@ const About = () => {
                             <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>We believe in the power of collective saving. By working together, we strengthen our community and enable everyone to achieve their financial goals, no matter how big or small.</span>
                         </div>
 
+
                         <div className='max-sm:col-span-3 p-5 h-[250px] max-sm:p-3 rounded border border-[#E4E7EC]'>
                             <img 
                                 src={ic_trust_transparency}
@@ -113,7 +112,7 @@ const About = () => {
                             />
                             <p className='text-secondary text-[16px] font-[500] text-left my-3'>Sustainability & Growth</p>
                             <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>We are dedicated to helping our users grow their savings in a sustainable way. By promoting long-term financial growth and stability, we contribute to a more prosperous future for everyone.</span>
-                        </div>
+                        </div> 
                     </div>
                 </section>
                 <section className='pt-20 pb-10 lg:px-20 px-5'>
@@ -127,7 +126,7 @@ const About = () => {
                                 alt='Team member 1'
                                 className='rounded-lg border-b-4 border-primary'
                             />
-                            <p className='text-secondary text-[16px] font-[500] text-left mb-3 mt-7'>Mrs. Chinoye</p>
+                            <p className='text-secondary text-[16px] font-[500] text-left mb-3 mt-7'>Lady Chinonye</p>
                             <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>CEO & Founder</span>
                         </div>
                         <div className='max-sm:mb-10'>
@@ -136,7 +135,7 @@ const About = () => {
                                 alt='Team member 2'
                                 className='rounded-lg border-b-4 border-primary'
                             />
-                            <p className='text-secondary text-[16px] font-[500] text-left mb-3 mt-7'>Mrs. Chinelo Umeakuka</p>
+                            <p className='text-secondary text-[16px] font-[500] text-left mb-3 mt-7'>Mrs. Chinelo</p>
                             <span className='block text-blue-gray lg:text-[14px] text-[13px] font-[400] text-left'>Chief Financial Officer (CFO)</span>
                         </div>
                         <div className='max-sm:mb-10'>

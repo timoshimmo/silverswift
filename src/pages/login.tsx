@@ -6,7 +6,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import Alert from '../components/forms/alert';
 import Input from '../components/forms/input';
 import PasswordInput from '../components/forms/password-input';
-import HeaderSimple from '../layouts/generic/header-simple';
+//import HeaderSimple from '../layouts/generic/header-simple';
+import Header from '../layouts/generic/header';
 import Button from '../components/forms/button';
 //import axios from 'axios';
 
@@ -86,7 +87,7 @@ const Login = () => {
 
     return (
         <div className="w-full bg-light-gray justify-start items-center">
-            <HeaderSimple />
+            <Header />
             <main className="w-full block">
                 <section className='flex relative justify-center'>
                     <div className="w-[55%] max-sm:w-full h-full lg:pt-20 pt-10 pb-10 px-20 max-sm:px-10 overflow-y-auto">

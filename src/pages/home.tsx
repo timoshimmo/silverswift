@@ -262,7 +262,7 @@ const Home = () => {
                         <div className='w-full mt-7'>
                             <div className='flex gap-4'>
                                 <span className='h-8 w-8 flex justify-center items-center rounded-full bg-primary-gray text-primary font-semibold text-[14px]'>3</span>
-                                <p className='w-5/6 lg:text-[14px] text-[13px] text-left text-blue-gray font-[300]'>Click the <a href="https://chat.whatsapp.com/EsTlRZeZpjx8ntEJ2bdX0k"className='text-primary hover:text-primary focus:text-priamry' target='_blank' rel="noopener noreferrer">here </a> to join our New Member WhatsApp group</p>
+                                <p className='w-5/6 lg:text-[14px] text-[13px] text-left text-blue-gray font-[300]'>Click the <a href="https://chat.whatsapp.com/K2kpsPhAlFc7jJ595CWWoQ" className='text-primary hover:text-primary focus:text-priamry' target='_blank' rel="noopener noreferrer">here </a> to join our New Member WhatsApp group</p>
                             </div>
                         </div>
                     </div>
@@ -337,146 +337,128 @@ const Home = () => {
                     <Timeline color="primary" position="alternate" className='!px-20'>
                         <TimelineItem>
                             <TimelineSeparator>
-                                <TimelineConnector className="!bg-primary !w-[10px] rounded-t-lg" />
+                                <TimelineConnector className="!bg-primary !w-[8px] rounded-t-lg" />
                             </TimelineSeparator>
                             <TimelineContent></TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
-                            <TimelineSeparator className='h-[180px]'>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 35, width: 35, borderWidth: 10 }}/>
-                                <TimelineConnector className="!bg-primary !w-[10px]"/>
+                            <TimelineSeparator className='h-[120px]'>
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 8 }}/>
+                                <TimelineConnector className="!bg-primary !w-[8px]"/>
                             </TimelineSeparator>
                             <TimelineContent className='flex justify-end'>
-                                <div className='w-full lg:w-[350px] lg:py-5 p-3'>   
+                                <div className='w-full lg:w-[450px] lg:py-4 p-3'>   
                                     <img 
                                         src={ic_rocket}
                                         alt='Community Empowerment Icon'
                                         className='lg:w-8 w-6 mb-2' 
                                     />
-                                    <span className='block text-[#4D4D4D] lg:text-[14px] text-[13px] font-[400] text-left'>Statutory weekly thrift/payment contribution of ₦1,500 after initial registration.</span>
+                                    <span className='block text-[#4D4D4D] lg:text-[12px] text-[13px] font-[400] text-left'>Statutory weekly thrift/payment contribution of ₦1,500 after initial registration.</span>
                                 </div>
                             </TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
-                            <TimelineSeparator className='h-[180px]'>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
-                                <TimelineConnector className="!bg-primary !w-[10px]" />
+                            <TimelineSeparator className='h-[120px]'>
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 8 }} />
+                                <TimelineConnector className="!bg-primary !w-[8px]" />
                             </TimelineSeparator>
                             <TimelineContent>
-                                <div className='w-full lg:w-[350px] lg:p-5 p-3'>   
+                                <div className='w-full lg:w-[450px] lg:p-4 p-3'>   
                                     <img 
                                         src={ic_rocket}
                                         alt='Community Empowerment Icon'
                                         className='lg:w-8 w-6 mb-2' 
                                     />
-                                    <span className='block text-[#4D4D4D] lg:text-[14px] text-[13px] font-[400] text-left'>The deadline for the weekly thrift/payment is every Saturday by 11:59 pm, failure attracts a 100% penalty (₦1500 extra) for the defaulted week.</span>
+                                    <span className='block text-[#4D4D4D] lg:text-[12px] text-[13px] font-[400] text-left'>The deadline for the weekly thrift/payment is every Saturday by 11:59 pm, failure attracts a 100% penalty (₦1500 extra) for the defaulted week.</span>
                                 </div>
                             </TimelineContent>
                         </TimelineItem>
 
                         <TimelineItem>
-                            <TimelineSeparator className='h-[180px]'>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
-                                <TimelineConnector className="!bg-primary !w-[10px]" />
+                            <TimelineSeparator className='h-[120px]'>
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 8 }} />
+                                <TimelineConnector className="!bg-primary !w-[8px]" />
                             </TimelineSeparator>
                             <TimelineContent className='flex justify-end'>
-                                <div className='w-full lg:w-[350px] lg:py-5 p-3'>   
+                                <div className='w-full lg:w-[450px] lg:py-4 p-3'>   
                                     <img 
                                         src={ic_rocket}
                                         alt='Community Empowerment Icon'
                                         className='lg:w-8 w-6 mb-2' 
                                     />
-                                    <span className='block text-[#4D4D4D] lg:text-[14px] text-[13px] font-[400] text-left'>Wallet funding (Bulk amount of above ₦1,500 to either to cover for some weeks, month(s) or the entire year.)</span>
+                                    <span className='block text-[#4D4D4D] lg:text-[12px] text-[13px] font-[400] text-left'>Wallet funding (Bulk amount of above ₦1,500 to either to cover for some weeks, month(s) or the entire year.)</span>
                                 </div>
                             </TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
-                            <TimelineSeparator className='h-[180px]'>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
-                                <TimelineConnector className="!bg-primary !w-[10px]" />
+                            <TimelineSeparator className='h-[120px]'>
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 8 }} />
+                                <TimelineConnector className="!bg-primary !w-[8px]" />
                             </TimelineSeparator>
                             <TimelineContent>
-                                <div className='w-full lg:w-[350px] lg:p-5 p-3'>   
+                                <div className='w-full lg:w-[450px] lg:p-4 p-3'>   
                                     <img 
                                         src={ic_rocket}
                                         alt='Community Empowerment Icon'
                                         className='lg:w-8 w-6 mb-2' 
                                     />
-                                    <span className='block text-[#4D4D4D] lg:text-[14px] text-[13px] font-[300] text-left'>This wallet funding will automatically be deducted and recorded every week for the member till the end of its cover periods.</span>
+                                    <span className='block text-[#4D4D4D] lg:text-[12px] text-[13px] font-[300] text-left'>This wallet funding will automatically be deducted and recorded every week for the member till the end of its cover periods.</span>
                                 </div>
                             </TimelineContent>
                         </TimelineItem>
-
                         <TimelineItem>
-                            <TimelineSeparator className='h-[180px]'>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
-                                <TimelineConnector className="!bg-primary !w-[10px]" />
+                            <TimelineSeparator className='h-[120px]'>
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 8 }} />
+                                <TimelineConnector className="!bg-primary !w-[8px]" />
                             </TimelineSeparator>
-                            <TimelineContent className='flex justify-end'>
-                                <div className='w-full lg:w-[350px] lg:py-5 p-3'>   
+                            <TimelineContent  className='flex justify-end'>
+                                <div className='w-full lg:w-[450px] lg:p-4 p-3'>   
                                     <img 
                                         src={ic_rocket}
                                         alt='Community Empowerment Icon'
                                         className='lg:w-8 w-6 mb-2' 
                                     />
-                                    <span className='block text-[#4D4D4D] lg:text-[14px] text-[13px] font-[300] text-left'>Existing member weekly payments</span>
+                                    <span className='block text-[#4D4D4D] lg:text-[12px] text-[13px] font-[300] text-left'>Upload genuine payment proof. Uploading fake payment proof will result in your account being flagged fraudulent</span>
                                 </div>
                             </TimelineContent>
                         </TimelineItem>
 
                         <TimelineItem>
-                            <TimelineSeparator className='h-[180px]'>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
-                                <TimelineConnector className="!bg-primary !w-[10px]" />
-                            </TimelineSeparator>
-                            <TimelineContent>
-                                <div className='w-full lg:w-[350px] lg:p-5 p-3'>   
-                                    <img 
-                                        src={ic_rocket}
-                                        alt='Community Empowerment Icon'
-                                        className='lg:w-8 w-6 mb-2' 
-                                    />
-                                    <span className='block text-[#4D4D4D] lg:text-[14px] text-[13px] font-[300] text-left'>Upload genuine payment proof. Uploading fake payment proof will result in your account being flagged fraudulent</span>
-                                </div>
-                            </TimelineContent>
-                        </TimelineItem>
-
-                        <TimelineItem>
-                            <TimelineSeparator className='h-[180px]'>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
-                                <TimelineConnector className="!bg-primary !w-[10px]" />
-                            </TimelineSeparator>
-                            <TimelineContent className='flex justify-end'>
-                                <div className='w-full lg:w-[350px] lg:py-5 p-3'>   
-                                    <img 
-                                        src={ic_rocket}
-                                        alt='Community Empowerment Icon'
-                                        className='lg:w-8 w-6 mb-2' 
-                                    />
-                                    <span className='block text-[#4D4D4D] lg:text-[14px] text-[13px] font-[300] text-left'>Ensure that you provide accurate information in each field.</span>
-                                </div>
-                            </TimelineContent>
-                        </TimelineItem>
-
-                        <TimelineItem>
-                            <TimelineSeparator className='h-[180px]'>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 35, width: 35, borderWidth: 10 }} />
-                                <TimelineConnector className="!bg-primary !w-[10px]" />
+                            <TimelineSeparator className='h-[120px]'>
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 8 }} />
+                                <TimelineConnector className="!bg-primary !w-[8px]" />
                             </TimelineSeparator>
                             <TimelineContent>
-                                <div className='w-full lg:w-[350px] lg:p-5 p-3'>   
+                                <div className='w-full lg:w-[450px] lg:py-4 p-3'>   
                                     <img 
                                         src={ic_rocket}
                                         alt='Community Empowerment Icon'
                                         className='lg:w-8 w-6 mb-2' 
                                     />
-                                    <span className='block text-[#4D4D4D] lg:text-[14px] text-[13px] font-[300] text-left'>All payments must be made to official Silverswift Vetures Bank account obtained from the office. Any payment to anny other bank is at saver's risk</span>
+                                    <span className='block text-[#4D4D4D] lg:text-[12px] text-[13px] font-[300] text-left'>Ensure that you provide accurate information in each field.</span>
+                                </div>
+                            </TimelineContent>
+                        </TimelineItem>
+
+                        <TimelineItem>
+                            <TimelineSeparator className='h-[120px]'>
+                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 8 }} />
+                                <TimelineConnector className="!bg-primary !w-[8px]" />
+                            </TimelineSeparator>
+                            <TimelineContent  className='flex justify-end'>
+                                <div className='w-full lg:w-[450px] lg:p-4 p-3'>   
+                                    <img 
+                                        src={ic_rocket}
+                                        alt='Community Empowerment Icon'
+                                        className='lg:w-8 w-6 mb-2' 
+                                    />
+                                    <span className='block text-[#4D4D4D] lg:text-[12px] text-[13px] font-[300] text-left'>All payments must be made to official Silverswift Vetures Bank account obtained from the office. Any payment to any other bank is at saver's risk</span>
                                 </div>
                             </TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
                             <TimelineSeparator>
-                                <TimelineConnector className="!bg-primary !w-[10px] rounded-b-lg" />
+                                <TimelineConnector className="!bg-primary !w-[8px] rounded-b-lg" />
                             </TimelineSeparator>
                             <TimelineContent></TimelineContent>
                         </TimelineItem>
@@ -497,7 +479,7 @@ const Home = () => {
                         <TimelineItem>
                             <TimelineSeparator>
                                 <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 10 }}/>
-                                <TimelineConnector className="!bg-primary !w-[8px] h-[100px]"/>
+                                <TimelineConnector className="!bg-primary !w-[8px] h-[80px]"/>
                             </TimelineSeparator>
                             <TimelineContent>
                                 <div className='w-full'>   
@@ -508,7 +490,7 @@ const Home = () => {
                         <TimelineItem>
                             <TimelineSeparator>
                                 <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
-                                <TimelineConnector className="!bg-primary !w-[8px] h-[100px]" />
+                                <TimelineConnector className="!bg-primary !w-[8px] h-[80px]" />
                             </TimelineSeparator>
                             <TimelineContent>
                                 <div className='w-full'>   
@@ -520,9 +502,9 @@ const Home = () => {
                         <TimelineItem>
                             <TimelineSeparator>
                                 <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
-                                <TimelineConnector className="!bg-primary !w-[8px] h-[100px]" />
+                                <TimelineConnector className="!bg-primary !w-[8px] h-[80px]" />
                             </TimelineSeparator>
-                            <TimelineContent className='flex justify-end'>
+                            <TimelineContent>
                                 <div className='w-full'>   
                                     <span className='block text-blue-gray text-[12px] font-[400] text-left'>Wallet funding (Bulk amount of above ₦1,500 to either to cover for some weeks, month(s) or the entire year.)</span>
                                 </div>
@@ -531,7 +513,7 @@ const Home = () => {
                         <TimelineItem>
                             <TimelineSeparator>
                                 <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
-                                <TimelineConnector className="!bg-primary !w-[8px] h-[100px]" />
+                                <TimelineConnector className="!bg-primary !w-[8px] h-[80px]" />
                             </TimelineSeparator>
                             <TimelineContent>
                                 <div className='w-full'>   
@@ -543,19 +525,7 @@ const Home = () => {
                         <TimelineItem>
                             <TimelineSeparator>
                                 <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
-                                <TimelineConnector className="!bg-primary !w-[8px] h-[100px]" />
-                            </TimelineSeparator>
-                            <TimelineContent className='flex justify-end'>
-                                <div className='w-full'>   
-                                    <span className='block text-blue-gray text-[12px] font-[300] text-left'>Existing member weekly payments</span>
-                                </div>
-                            </TimelineContent>
-                        </TimelineItem>
-
-                        <TimelineItem>
-                            <TimelineSeparator>
-                                <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
-                                <TimelineConnector className="!bg-primary !w-[8px] h-[100px]" />
+                                <TimelineConnector className="!bg-primary !w-[8px] h-[80px]" />
                             </TimelineSeparator>
                             <TimelineContent>
                                 <div className='w-full'>   
@@ -567,9 +537,9 @@ const Home = () => {
                         <TimelineItem>
                             <TimelineSeparator>
                                 <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
-                                <TimelineConnector className="!bg-primary !w-[8px] h-[100px]" />
+                                <TimelineConnector className="!bg-primary !w-[8px] h-[80px]" />
                             </TimelineSeparator>
-                            <TimelineContent className='flex justify-end'>
+                            <TimelineContent>
                                 <div className='w-full'>   
                                     <span className='block text-blue-gray text-[12px] font-[300] text-left'>Ensure that you provide accurate information in each field.</span>
                                 </div>
@@ -578,11 +548,11 @@ const Home = () => {
                         <TimelineItem>
                             <TimelineSeparator>
                                 <TimelineDot variant="outlined" style={{ borderColor: "#8e1974", margin: 0, height: 30, width: 30, borderWidth: 10 }} />
-                                <TimelineConnector className="!bg-primary !w-[8px] h-[100px] rounded-b-lg" />
+                                <TimelineConnector className="!bg-primary !w-[8px] h-[80px] rounded-b-lg" />
                             </TimelineSeparator>
                             <TimelineContent>
                                 <div className='w-full'>   
-                                    <span className='block text-blue-gray text-[12px] font-[300] text-left'>All payments must be made to official Silverswift Vetures Bank account obtained from the office. Any payment to anny other bank is at saver's risk</span>
+                                    <span className='block text-blue-gray text-[12px] font-[300] text-left'>All payments must be made to official Silverswift Vetures Bank account obtained from the office. Any payment to any other bank is at saver's risk</span>
                                 </div>
                             </TimelineContent>
                         </TimelineItem>

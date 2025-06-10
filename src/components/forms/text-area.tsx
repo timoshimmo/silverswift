@@ -30,7 +30,6 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, Props>((props, ref) => {
     error,
     variant = "normal",
     shadow = false,
-    compulsory = false,
     inputClassName,
     ...rest
   } = props;

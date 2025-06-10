@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import HeaderSimple from '../layouts/generic/header-simple';
+import Header from '../layouts/generic/header';
 import { ROUTES } from '../lib/route-links';
 import * as yup from 'yup';
 import { useForm } from "react-hook-form";
@@ -99,7 +99,7 @@ const SignUp = () => {
 
     return (
         <div className="w-full justify-start items-center bg-light-gray">
-            <HeaderSimple />
+            <Header />
             <main className="w-full block">
                 <section className='flex relative justify-center bg-light-gray'>
                     <div className="w-[55%] max-sm:w-full h-full lg:pt-20 pt-10 pb-10 px-20 max-sm:px-10 overflow-y-auto">
