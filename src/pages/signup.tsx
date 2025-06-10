@@ -105,7 +105,7 @@ const SignUp = () => {
                     <div className="w-[55%] max-sm:w-full h-full lg:pt-20 pt-10 pb-10 px-20 max-sm:px-10 overflow-y-auto">
                         <div className="w-full bg-white h-auto rounded-2xl p-5">
                             <h2 className="text-[#000000] text-[30px] font-[500] text-left">Create Account</h2>
-                            <p className='w-full text-blue-gray lg:text-[15px] text-[14px] mb-5 text-left'>Let’s go! Create an account ✨</p>
+                            <p className='w-full text-blue-gray lg:text-[15px] text-[14px] mb-5 text-left'>Create an account to register with SilverSwift Ventures ✨</p>
                             <div className="mt-6 w-full">
                                 <form onSubmit={handleSubmit(onSubmit)} noValidate>
                                     {errorMsg ? (
@@ -148,12 +148,12 @@ const SignUp = () => {
                                         </div>
 
                                         <Input
-                                            label="Email"
+                                            label="Email / Phone Number"
                                             {...register('email')}
                                             type="email"
                                             variant="outline"
                                             className="mb-5"
-                                            placeholder='enter your email'
+                                            placeholder='enter your email or phone number'
                                             error={errors.email?.message!}
                                         />
 

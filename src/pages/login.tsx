@@ -116,12 +116,12 @@ const Login = () => {
                                     ) : null}
 
                                         <Input
-                                            label="Email"
+                                            label="Email / Phone Number"
                                             {...register('email')}
                                             type="email"
                                             variant="outline"
                                             className="mb-5"
-                                            placeholder='enter your email'
+                                            placeholder='enter your email or phone number'
                                             error={errors.email?.message!}
                                         />
 
